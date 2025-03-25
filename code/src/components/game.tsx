@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 
 export default function Game() {
   const leftFootRef = useRef<SVGGElement | null>(null);
+  const [leftFootSlow, setLeftFootSlow] = useState(false);
   const rightFootRef = useRef<SVGGElement | null>(null);
+  const [rightFootSlow, setRightFootSlow] = useState(false);
   const headRef = useRef<SVGGElement | null>(null);
   const yOffset = 0;
+  const gap = 5;
 
   const [leftFootPosition, setLeftFootPosition] = useState<{
     x: number;
@@ -41,28 +44,65 @@ export default function Game() {
       rightFootRef.current &&
       dir !== null
     ) {
+      if (x < window.innerWidth / 2 + gap && x > window.innerWidth / 2 - gap) {
+        setLeftFootPosition({
+          x: -gap,
+          y: y - window.innerWidth / 2 + yOffset,
+        });
+
+        setRightFootPosition({
+          x: gap,
+          y: y - window.innerWidth / 2 + yOffset,
+        });
+
+        return;
+      }
+
+      if (dir === 0) {
+        setRightFootSlow(true);
+        setLeftFootSlow(false);
+      }
+      if (dir === 1) {
+        setRightFootSlow(false);
+        setLeftFootSlow(true);
+      }
+
       setLeftFootPosition({
         x:
           dir === 0
-            ? x - window.innerWidth / 2 + leftFootRef.current.getBBox().width
+            ? Math.min(
+                x - window.innerWidth / 2 + leftFootRef.current.getBBox().width,
+                -gap
+              )
+            : -gap,
+        y:
+          dir === 0
+            ? outOfBounds
+              ? -window.innerHeight +
+                  headBottom! +
+                  leftFootRef.current.getBBox().height || 0
+              : y - window.innerWidth / 2 + yOffset
             : 0,
-        y: outOfBounds
-          ? -window.innerHeight +
-              headBottom! +
-              leftFootRef.current.getBBox().height || 0
-          : y - window.innerWidth / 2 + yOffset,
       });
 
       setRightFootPosition({
         x:
           dir === 1
-            ? x - window.innerWidth / 2 - rightFootRef.current.getBBox().width
+            ? Math.max(
+                x -
+                  window.innerWidth / 2 -
+                  rightFootRef.current.getBBox().width,
+                gap
+              )
+            : gap,
+        y:
+          dir === 1
+            ? outOfBounds
+              ? -window.innerHeight +
+                  headBottom! +
+                  rightFootRef.current.getBBox().height || 0
+              : y - window.innerWidth / 2 + yOffset
             : 0,
-        y: outOfBounds
-          ? -window.innerHeight +
-              headBottom! +
-              leftFootRef.current.getBBox().height || 0
-          : y - window.innerWidth / 2 + yOffset,
       });
     }
   };
@@ -237,6 +277,10 @@ export default function Game() {
         ref={leftFootRef}
         initial={{ x: 0, y: 0 }}
         animate={{ x: leftFootPosition.x, y: leftFootPosition.y }}
+        transition={{
+          duration: leftFootSlow ? 2 : 0.2,
+          type: leftFootSlow ? "tween" : "spring",
+        }}
       >
         <path
           className="uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f"
@@ -283,6 +327,10 @@ export default function Game() {
         ref={rightFootRef}
         initial={{ x: 0, y: 0 }}
         animate={{ x: rightFootPosition.x, y: rightFootPosition.y }}
+        transition={{
+          duration: rightFootSlow ? 2 : 0.2,
+          type: rightFootSlow ? "tween" : "spring",
+        }}
       >
         <path
           className="uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f"
