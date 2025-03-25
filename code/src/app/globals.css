@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
+.uuid-bbd66d80-2ff4-4519-83a2-ec610f2f3ecd,
+.uuid-6a553483-75cb-473f-824a-0e3ee690a10d,
+.uuid-304d55c3-735e-4b24-8a07-32a06f93cd4e,
+.uuid-de6dbcdb-b3d9-4ed1-9d58-9a10a5b2e460,
+.uuid-ae9f080f-f771-45aa-8ef1-3d055b37c9de {
+  fill: none;
+}
+
+.uuid-a9af7b97-9975-47d9-9779-8efd92ee1df9,
+.uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f,
+.uuid-ee0c6c3e-05dd-484a-bd9b-0be0c4ee93bc,
+.uuid-3b916ab6-413d-42f1-b2ba-63e2c3bd228b,
+.uuid-6a553483-75cb-473f-824a-0e3ee690a10d,
+.uuid-304d55c3-735e-4b24-8a07-32a06f93cd4e,
+.uuid-9e5e0408-55ec-42da-a5d6-f0f5465d2b3a,
+.uuid-b39e4a2c-35ea-4578-9112-c3ec4c51ba2c,
+.uuid-1aa38a66-4b40-42cb-a041-365474b54781,
+.uuid-064ccf6b-a54f-4380-83b4-8e1137657ac5,
+.uuid-1f92da03-2862-4b24-a522-fb9f74ef2f64,
+.uuid-91cc67d6-1cbb-4a77-8c42-d89a8b5fed8e,
+.uuid-9188d96b-679c-4b20-bceb-c360d1efef07,
+.uuid-de6dbcdb-b3d9-4ed1-9d58-9a10a5b2e460,
+.uuid-2582f636-3c79-4282-ac76-bbf0c6942c81,
+.uuid-ddda0865-b933-4282-8c32-84d9777d3c16,
+.uuid-ae9f080f-f771-45aa-8ef1-3d055b37c9de,
+.uuid-bff99d05-6912-44f3-8792-dbf0149d575b {
+  stroke: #231f20;
+}
+
+.uuid-a9af7b97-9975-47d9-9779-8efd92ee1df9,
+.uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f,
+.uuid-ee0c6c3e-05dd-484a-bd9b-0be0c4ee93bc,
+.uuid-3b916ab6-413d-42f1-b2ba-63e2c3bd228b,
+.uuid-9e5e0408-55ec-42da-a5d6-f0f5465d2b3a,
+.uuid-b39e4a2c-35ea-4578-9112-c3ec4c51ba2c,
+.uuid-1aa38a66-4b40-42cb-a041-365474b54781,
+.uuid-064ccf6b-a54f-4380-83b4-8e1137657ac5,
+.uuid-91cc67d6-1cbb-4a77-8c42-d89a8b5fed8e,
+.uuid-de6dbcdb-b3d9-4ed1-9d58-9a10a5b2e460,
+.uuid-2582f636-3c79-4282-ac76-bbf0c6942c81,
+.uuid-ddda0865-b933-4282-8c32-84d9777d3c16,
+.uuid-ae9f080f-f771-45aa-8ef1-3d055b37c9de,
+.uuid-bff99d05-6912-44f3-8792-dbf0149d575b {
+  stroke-miterlimit: 10;
+}
+
+.uuid-a9af7b97-9975-47d9-9779-8efd92ee1df9,
+.uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f,
+.uuid-304d55c3-735e-4b24-8a07-32a06f93cd4e,
+.uuid-9e5e0408-55ec-42da-a5d6-f0f5465d2b3a,
+.uuid-064ccf6b-a54f-4380-83b4-8e1137657ac5,
+.uuid-9188d96b-679c-4b20-bceb-c360d1efef07,
+.uuid-de6dbcdb-b3d9-4ed1-9d58-9a10a5b2e460,
+.uuid-2582f636-3c79-4282-ac76-bbf0c6942c81 {
+  stroke-width: 6px;
+}
+
+.uuid-a9af7b97-9975-47d9-9779-8efd92ee1df9,
+.uuid-055715d6-6f9b-452d-b23a-a3e42dfe959f {
+  fill: #006cb1;
+}
+
+.uuid-91d3d66f-1533-4939-83d5-12a119787ae4 {
+  fill: #b78852;
+}
+
+.uuid-085ac5c7-c5a9-445f-ad19-a0e10e2bc15f {
+  fill: #006cad;
+}
+
+.uuid-ee0c6c3e-05dd-484a-bd9b-0be0c4ee93bc {
+  stroke-width: 3px;
+}
+
+.uuid-ee0c6c3e-05dd-484a-bd9b-0be0c4ee93bc,
+.uuid-ddda0865-b933-4282-8c32-84d9777d3c16 {
+  fill: #094b7b;
+}
+
+.uuid-66b5e9ad-2e5d-42ca-a025-26ac4042305f,
+.uuid-1aa38a66-4b40-42cb-a041-365474b54781 {
+  fill: #231f20;
+}
+
+.uuid-3b916ab6-413d-42f1-b2ba-63e2c3bd228b {
+  stroke-width: 2px;
+}
+
+.uuid-3b916ab6-413d-42f1-b2ba-63e2c3bd228b,
+.uuid-b39e4a2c-35ea-4578-9112-c3ec4c51ba2c {
+  fill: #fff;
+}
+
+.uuid-6a553483-75cb-473f-824a-0e3ee690a10d,
+.uuid-304d55c3-735e-4b24-8a07-32a06f93cd4e,
+.uuid-1f92da03-2862-4b24-a522-fb9f74ef2f64,
+.uuid-9188d96b-679c-4b20-bceb-c360d1efef07 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.uuid-6a553483-75cb-473f-824a-0e3ee690a10d,
+.uuid-b39e4a2c-35ea-4578-9112-c3ec4c51ba2c,
+.uuid-1aa38a66-4b40-42cb-a041-365474b54781,
+.uuid-bff99d05-6912-44f3-8792-dbf0149d575b {
+  stroke-width: 4px;
+}
+
+.uuid-91a12936-eee4-414e-8b5b-21f6abb04d08 {
+  fill: #b33d60;
+}
+
+.uuid-33857de4-153a-4ff2-8211-67ce5e71342c {
+  clip-path: url(#uuid-238cb64b-ee21-4de1-9303-81a86e00ccd6);
+}
+
+.uuid-c2d7024d-1e76-4125-8787-388326b1238f {
+  clip-path: url(#uuid-1a16b5de-eb5c-4399-ace7-86cc56bd81c5);
+}
+
+.uuid-4aedaf1b-11ef-4431-b0be-1da6ec77b6ac,
+.uuid-2582f636-3c79-4282-ac76-bbf0c6942c81 {
+  fill: #cf9667;
+}
+
+.uuid-4e603e8d-68ed-4d28-92f7-2daf17a7a84b {
+  clip-path: url(#uuid-600bf9ee-3d57-44f4-b11a-2c13abbe604f);
+}
+
+.uuid-9e5e0408-55ec-42da-a5d6-f0f5465d2b3a {
+  fill: #0569b3;
+}
+
+.uuid-d965ae48-1390-4d6c-be49-b9c8d68d50ca {
+  fill: #a5714b;
+}
+
+.uuid-ad4b71b7-86bb-4730-bae2-a81adb97846c {
+  clip-path: url(#uuid-86b4cb4e-1931-44ec-bea2-d72e1faff70e);
+}
+
+.uuid-6f777d4e-ee1f-4b25-ba9e-d40465942560 {
+  clip-path: url(#uuid-78d8a53a-1be4-474c-bab3-72807638b07d);
+}
+
+.uuid-720f8369-42cd-40d3-bdaf-5ab52bacc99c,
+.uuid-1f92da03-2862-4b24-a522-fb9f74ef2f64,
+.uuid-91cc67d6-1cbb-4a77-8c42-d89a8b5fed8e {
+  fill: #cb955d;
+}
+
+.uuid-064ccf6b-a54f-4380-83b4-8e1137657ac5 {
+  fill: #c48661;
+}
+
+.uuid-beef6af7-266f-4102-926c-91d7dde0764d {
+  fill: #cb955e;
+}
+
+.uuid-1f92da03-2862-4b24-a522-fb9f74ef2f64,
+.uuid-91cc67d6-1cbb-4a77-8c42-d89a8b5fed8e,
+.uuid-ae9f080f-f771-45aa-8ef1-3d055b37c9de {
+  stroke-width: 8px;
+}
+
+.uuid-9188d96b-679c-4b20-bceb-c360d1efef07 {
+  fill: #3a2113;
+}
+
+.uuid-5f3a05c9-ebba-4b2b-9688-f1619b33b9cf {
+  clip-path: url(#uuid-45c33c52-3ad8-4629-9f75-d54a9359ce5d);
+}
+
+.uuid-a6aa9afa-9012-4fae-a3f9-4822827adeac {
+  clip-path: url(#uuid-34cea55a-2f0c-48c8-8364-f237fe664b7f);
+}
+
+.uuid-869b8637-2cb2-469d-9238-a7f22712fbc0 {
+  fill: #715730;
+}
+
+.uuid-ddda0865-b933-4282-8c32-84d9777d3c16 {
+  stroke-width: 12px;
+}
+
+.uuid-bff99d05-6912-44f3-8792-dbf0149d575b {
+  fill: #ef599f;
+}
