@@ -44,20 +44,6 @@ export default function Game() {
       rightFootRef.current &&
       dir !== null
     ) {
-      if (x < window.innerWidth / 2 + gap && x > window.innerWidth / 2 - gap) {
-        setLeftFootPosition({
-          x: -gap,
-          y: y - window.innerWidth / 2 + yOffset,
-        });
-
-        setRightFootPosition({
-          x: gap,
-          y: y - window.innerWidth / 2 + yOffset,
-        });
-
-        return;
-      }
-
       if (dir === 0) {
         setRightFootSlow(true);
         setLeftFootSlow(false);
